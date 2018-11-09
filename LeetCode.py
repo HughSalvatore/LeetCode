@@ -32,8 +32,25 @@ def isSquare(target):
     
     return False
 
+# Determine if a string is the palindrome, you only can delete one letter..
+def isPalindrome(target, i, j):
+    while i <= j:
+        if target[i] == target[j]:
+            i += 1
+            j -= 1
+            pass
+        else:
+            return False
+    return True
+
+
+     
+
+           
+
 if __name__ == '__main__':
     # array = [1, 4, 2, 8, 5, 7]
     # (i, j) = findTwoNumSum(array, 12)
     # print(i, j)
     print(isSquare(11))
+    # print(isPalindrome("abba"))
